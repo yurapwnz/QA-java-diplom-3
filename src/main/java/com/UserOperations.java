@@ -64,7 +64,7 @@ public class UserOperations {
      метод удаления пользователя по токену, возвращенному после создания
      пользователя. Удаляем только в случае, если token заполнен.
      */
-    public void delete() {
+    public static void delete() {
         if (Tokens.getAccessToken() == null) {
             return;
         }
