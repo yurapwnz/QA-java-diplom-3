@@ -71,7 +71,7 @@ public class MainPage {
     @Step ("Клик на кнопку 'Бургеры'")
     public MainPage bunButtonClick(){
         bunButton.click();
-        return this;
+        return  this;
     }
 
     @Step ("Клик на кнопку 'Соусы'")
@@ -87,9 +87,24 @@ public class MainPage {
     }
 
     // Отображение кнопки "Оформить заказ"
-    public boolean arrangeOrderButtonVisible (){
-        arrangeOrder.is(Condition.visible);
-        return true;
+    public boolean arrangeOrderButtonVisible(){
+        return arrangeOrder.is(Condition.visible);
     }
+
+    // Отображение блока "Булки"
+    public boolean bunBlockVisible (){
+        return burgerBlock.isDisplayed();
+    }
+
+    // Отображение блока "Соусы"
+    public boolean sauceBlockVisible(){
+        return sauceBlock.isDisplayed();
+    }
+
+    // Отображение блока "Начинки"
+    public boolean fillingBlockVisible(){
+        return fillingBlock.isDisplayed();
+    }
+
 }
 

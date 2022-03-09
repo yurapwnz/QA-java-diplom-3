@@ -38,10 +38,8 @@ public class UserLoginTest {
                 .setPassword(password)
                 .loginButtonClick();
 
-        boolean buttonShow = mainPage.arrangeOrderButtonVisible();
-
         webdriver().shouldHave(url("https://stellarburgers.nomoreparties.site/"));
-        assertTrue("Button invisible", buttonShow);
+        assertTrue("Button invisible", mainPage.arrangeOrderButtonVisible());
 
     }
     @Test
@@ -54,10 +52,8 @@ public class UserLoginTest {
                 .setPassword(password)
                 .loginButtonClick();
 
-        boolean buttonShow = mainPage.arrangeOrderButtonVisible();
-
         webdriver().shouldHave(url("https://stellarburgers.nomoreparties.site/"));
-        assertTrue("Button invisible", buttonShow);
+        assertTrue("Button invisible", mainPage.arrangeOrderButtonVisible());
     }
     @Test
     @Description ("Авторизация пользователя. Кнопка 'Войти' на странице регистрации")
@@ -71,10 +67,8 @@ public class UserLoginTest {
                 .setPassword(password)
                 .loginButtonClick();
 
-        boolean buttonShow = mainPage.arrangeOrderButtonVisible();
-
         webdriver().shouldHave(url("https://stellarburgers.nomoreparties.site/"));
-        assertTrue("Button invisible", buttonShow);
+        assertTrue("Button invisible", mainPage.arrangeOrderButtonVisible());
 
     }
     @Test
@@ -89,10 +83,8 @@ public class UserLoginTest {
                 .setPassword(password)
                 .loginButtonClick();
 
-        boolean buttonShow = mainPage.arrangeOrderButtonVisible();
-
         webdriver().shouldHave(url("https://stellarburgers.nomoreparties.site/"));
-        assertTrue("Button invisible", buttonShow);
+        assertTrue("Button invisible", mainPage.arrangeOrderButtonVisible());
 
     }
     @Test

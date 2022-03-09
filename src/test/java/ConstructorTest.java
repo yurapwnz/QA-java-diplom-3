@@ -30,9 +30,7 @@ public class ConstructorTest {
                 .fillingButtonClick()
                 .bunButtonClick();
 
-        boolean blockVisible = mainPage.burgerBlock.isDisplayed();
-
-        assertTrue("Block is invisible",blockVisible);
+        assertTrue("Block is invisible", mainPage.bunBlockVisible());
     }
 
     @Test
@@ -42,9 +40,7 @@ public class ConstructorTest {
         mainPage
                 .sauceButtonClick();
 
-        boolean blockVisible = mainPage.sauceBlock.isDisplayed();
-
-        assertTrue("Block is invisible",blockVisible);
+        assertTrue("Block is invisible", mainPage.sauceBlockVisible());
     }
 
     @Test
@@ -54,9 +50,7 @@ public class ConstructorTest {
         mainPage
                 .fillingButtonClick();
 
-        boolean blockVisible = mainPage.fillingBlock.isDisplayed();
-
-        assertTrue("Block is invisible",blockVisible);
+        assertTrue("Block is invisible", mainPage.fillingBlockVisible());
     }
 
     @After

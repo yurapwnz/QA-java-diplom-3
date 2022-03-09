@@ -48,10 +48,10 @@ public class UserRegistrationTest {
                 .setPassword(password)
                 .loginButtonClick();
 
-        boolean buttonShow = mainPage.arrangeOrderButtonVisible();
+
 
         webdriver().shouldHave(url("https://stellarburgers.nomoreparties.site/"));
-        assertTrue("Button invisible", buttonShow);
+        assertTrue("Button invisible", mainPage.arrangeOrderButtonVisible());
 
     }
 
